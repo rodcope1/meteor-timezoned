@@ -1,8 +1,8 @@
 Package.describe({
-  name: "aldeed:timezoned",
+  name: "rodcope:timezoned",
   summary: "A high-level time zone package for Meteor",
   version: "0.1.2",
-  git: "https://github.com/aldeed/meteor-timezoned.git"
+  git: "https://github.com/rodcope1/meteor-timezoned.git"
 });
 
 Package.on_use(function(api) {
