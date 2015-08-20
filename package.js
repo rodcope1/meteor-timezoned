@@ -21,7 +21,7 @@ Package.on_use(function(api) {
 
 Package.on_test(function(api) {
   if (api.versionsFrom) {
-    api.use('aldeed:timezoned');
+    api.use('rodcope:timezoned');
     api.use('tinytest@1.0.5');
   } else {
     api.use(['timezoned', 'tinytest']);
