@@ -1,5 +1,5 @@
 Package.describe({
-  name: "rodcope:timezoned",
+  name: "rodcope1:timezoned",
   summary: "A high-level time zone package for Meteor",
   version: "0.1.2",
   git: "https://github.com/rodcope1/meteor-timezoned.git"
@@ -21,7 +21,7 @@ Package.on_use(function(api) {
 
 Package.on_test(function(api) {
   if (api.versionsFrom) {
-    api.use('rodcope:timezoned');
+    api.use('rodcope1:timezoned');
     api.use('tinytest@1.0.5');
   } else {
     api.use(['timezoned', 'tinytest']);
