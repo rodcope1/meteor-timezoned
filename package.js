@@ -8,7 +8,7 @@ Package.describe({
 Package.on_use(function(api) {
   if (api.versionsFrom) {
     api.use('aldeed:moment-timezone@0.4.0');
-    api.use('aldeed:geocoder@0.3.6');
+    api.use('aldeed:geocoder@0.3.8');
     api.use('underscore@1.0.3');
     api.use('http@1.1.0');
   } else {
