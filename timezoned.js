@@ -44,7 +44,7 @@ TimeZoned = {
 			return;
 		}
 
-		var geo = new GeoCoder();
+		var geo = new GeoCoder({apiKey: baseParamsTZ.apiKey});
 
 		if (callback) {
 			return geo.geocode(address, function (error, result) {
