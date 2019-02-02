@@ -1,7 +1,7 @@
 Package.describe({
   name: "rodcope1:timezoned",
   summary: "A high-level time zone package for Meteor",
-  version: "0.1.3",
+  version: "0.1.4",
   git: "https://github.com/rodcope1/meteor-timezoned.git"
 });
 
