@@ -24,7 +24,17 @@ if (Meteor.isServer) {
 	Meteor.methods({
 		"_TimeZoned_getTimeZoneForAddress": function (address) {
 			this.unblock();
-			return TimeZoned.getTimeZoneForAddress(address);
+                        try {
+				return TimeZoned.getTimeZoneForAddress(address);
+                        }
+			catch (error) {
+				if (error.message && (/unable to geocode/i.test(error.message))) {
+					// Don't pollute the console and logs when the user types a bad address
+					return;
+                                } else {
+					throw error;
+				}
+			}
 		}
 	});
 }
